@@ -50,19 +50,8 @@ int			main(int ac, char **av)
 	t_wolf	w;
 	
 	check_ac(ac);
-	/*if(parse(&w, av[1]) == -1)
-		exit(-1);*/
-	parse(&w, av[1]);
-	
-	printf("%d %d\n", w.map.height, w.map.width);
-	printf("%s\n", w.map.no);
-	printf("%s\n", w.map.so);
-	printf("%s\n", w.map.we);
-	printf("%s\n", w.map.ea);
-	printf("%s\n", w.map.s);
-	printf(" %d | %d | %d\n", w.map.f.r, w.map.f.g, w.map.f.b);
-	printf(" %d | %d | %d\n", w.map.c.r, w.map.c.g, w.map.c.b);
-	printf("%s\n", w.map.grid);
+	if(parse(&w, av[1]) == -1)
+		exit(-1);
 	// my_mlx_init(w, av[1]);
 	// mlx_hooks(w);
 	return (0);
