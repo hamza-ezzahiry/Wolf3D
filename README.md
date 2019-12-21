@@ -48,6 +48,6 @@ To run the program:
 
 ## Screenshots
 
-<img src="resources/w3d-screenshot01.png" width="1280" />
+<img src="https://i.ytimg.com/vi/UGD-UR-JQV0/maxresdefault.jpg" width="1280" />
 
 
