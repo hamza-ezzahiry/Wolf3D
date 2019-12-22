@@ -50,4 +50,14 @@ To run the program:
 
 <img src="https://i.ytimg.com/vi/UGD-UR-JQV0/maxresdefault.jpg" width="1280" />
 
+## I want to contribute to the project! But how?
+
+ - Fork this repository
+ - Clone your repository forked
+ - Contribute
+ - Push
+ - Create a pull request in this repository
+ - Wait the merged !
+ - Be happy :)
+
 
