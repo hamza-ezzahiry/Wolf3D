@@ -20,7 +20,25 @@
 # define WIDTH 700
 # define HEIGHT 700
 
-typedef struct s_color
+typedef struct	s_plot
+{
+	int		dx;
+	int		sx;
+	int		dy;
+	int		sy;
+	int		err;
+	int		e2;
+}				t_plot;
+
+typedef struct	s_point
+{
+	int		x0;
+	int		y0;
+	int		x1;
+	int		y1;
+}				t_point;
+
+typedef struct	s_color
 {
 	int		r;
 	int		g;
@@ -52,14 +70,11 @@ typedef struct	s_wolf
 	t_map	map;
 }				t_wolf;
 
-typedef struct s_line
+typedef struct	s_line
 {
 	int		nb_line;
 	int		trouve;
-	
 }				t_line;
-
-
 
 /*
 ** functions
@@ -69,5 +84,8 @@ void			check_ac(int ac);
 void			check_av(char *str, t_wolf *w);
 int				parse(t_wolf *w, char *s);
 void			ft_to_upper(char **s);
+int				key_press(int key);
+void			my_mlx_init(t_wolf *w, char *s);
+void			mlx_hooks(t_wolf *w);
 
 #endif

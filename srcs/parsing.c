@@ -49,7 +49,7 @@ int             ft_open(char *filename)
 		if ((fd = open(filename, O_RDONLY)) == -1)
 		{
 				perror("wolf3d");
-				return (-1);
+				exit(0);
 		}
 		return (fd);
 }
@@ -61,7 +61,7 @@ int		is_everything_okey(char *tab)
 	i = -1;
 	while(i++ < 10)
 		if(tab[i] == '0')
-			return (0);
+			return (-1);
 	return (1);
 }
 
@@ -194,7 +194,7 @@ int		check_map(char *line, t_map *map)
 
 	if(is_valide(line) && ((int) ft_strlen(line) == map->size))
 	{
-		tmp = ft_strjoin(map->grid, "me");
+		tmp = ft_strjoin(map->grid, line);
 		free(map->grid);
 		map->grid = tmp;
 	}
@@ -240,14 +240,21 @@ void	init_tab(char *tab)
 	}
 }
 
+int		check_grid(char *s)
+{
+	(void) s;
+	return (1);
+	return (0);
+}
+
 int     parse(t_wolf *w, char *s)
 {
 	char	*line;
 
-	w->map.grid = strdup("");
 	w->map.size = 0;
 	init_tab(w->map.is_okey);
 	w->fd = ft_open(s);
+	w->map.grid = ft_strdup("");
 	if (w->fd == -1)
 		return (-1);
 	while (get_next_line(w->fd, &line) > 0)
@@ -255,21 +262,7 @@ int     parse(t_wolf *w, char *s)
 		checker(line, &w->map);
 		free(line);
 	}
-	//if(l == 1)
+	if(check_grid(w->map.grid))
 		w->map.is_okey[8] = '1';
 	return is_everything_okey(w->map.is_okey);
 }
-
-
-// int set_resolution(t_wolf *w, char *line)
-// {
-// 	line++;
-// 	while (*line == ' ' || *line == '\t')
-// 		line++;
-// 	w->map.width = ft_atoi(line);
-// 	while (ft_isdigit(*line))
-// 		line++;
-// 	while (*line == ' ' || *line == '\t')
-// 		line++;
-// 	return (1);
-// }

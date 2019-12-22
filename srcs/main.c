@@ -12,47 +12,17 @@
 
 #include "wolf3d.h"
 
-void		check_ac(int ac)
-{
-	if (ac != 2)
-	{
-		show_usage();
-		exit(0);
-	}
-}
-
-void            show_usage(void)
-{
-        ft_putendl("Usage : ./wolf3d {map name}");
-}
-
-/*
-void		my_mlx_init(t_wolf *w, char *s)
-{
-	w->mlx = mlx_init();
-	w->win = mlx_new_window(w->mlx, WIDTH, HEIGHT, s);
-	w->img = mlx_new_image(w->mlx, WIDTH, HEIGHT);
-}
-int key_press(int key, t_wolf *w)
-{
-	return (1);
-}
-
-void		mlx_hooks(t_wolf *w)
-{
-	mlx_hook(w->win, 2, 0, key_press, w);
-	mlx_hook(f->win, 4, 0, mouse_press, f);
-	mlx_hook(f->win, 6, 0, mouse_move, f);
-	mlx_loop(w->mlx);
-}*/
 int			main(int ac, char **av)
 {
 	t_wolf	w;
 	
 	check_ac(ac);
-	if(parse(&w, av[1]) == -1)
-		exit(-1);
-	// my_mlx_init(w, av[1]);
-	// mlx_hooks(w);
+	if(parse(&w, av[1]) < 0)
+	{
+		ft_putendl("Map not correct");
+		return 0;
+	}
+	my_mlx_init(&w, av[1]);
+	mlx_hooks(&w);
 	return (0);
 }

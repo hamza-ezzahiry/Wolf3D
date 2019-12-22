@@ -14,7 +14,8 @@
 NAME = wolf3d
 
 SRC_PATH = srcs
-SRC_NAME = main.c parsing.c
+SRC_NAME = main.c parsing.c check_ac.c events.c \
+			is_valide.c mlx_functions.c 
 
 OBJ_PATH = objs
 OBJ_NAME = $(SRC_NAME:.c=.o)
