@@ -20,6 +20,7 @@ It will enable you to explore ray-casting. Your goal will be to make a dynamic v
 - **[lodev.org - Raycatsing ](https://lodev.org/cgtutor/raycasting.html)** 
 - **[Permadi - Ray-Casting Tutorial](https://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/)** 
 - **[Wolf3D raycasting engine – The Theory](http://www.sebcossu.com/2018/02/07/wolf3d-raycasting-engine-theory/)** 
+- **[A first-person engine in 265 lines - JS](https://www.playfuljs.com/a-first-person-engine-in-265-lines/)** 
 
 ## How to realize Wolf3D step by step 
 
