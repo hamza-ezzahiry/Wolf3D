@@ -1,11 +1,11 @@
 R 1920 1080
 
-NO ./pics/colorstone.png
+NO ./pics/
 SO ./pics/bluestone.png
 WE ./pics/greystone.png
 EA ./pics/redbrick.png
 
-S ./pics/barrel.png
+S ~/Desktop
 
 FT ./pics/mossy.png
 CT ./pics/wood.png

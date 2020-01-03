@@ -1,4 +1,4 @@
-R 1920 1080
+R 1920000 108000
 
 NO ./pics/colorstone.png
 SO ./pics/bluestone.png
