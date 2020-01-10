@@ -17,7 +17,8 @@ It will enable you to explore ray-casting. Your goal will be to make a dynamic v
 
 ## Resources :  
 - **[KhanAcademy - Vectors & Spaces](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces)**
-- **[lodev.org - Raycatsing ](https://lodev.org/cgtutor/raycasting.html)** 
+- **[lodev.org - Raycatsing (Vectors) ](https://lodev.org/cgtutor/raycasting.html)** 
+- **[Pikuma -Ray Casting course (Angles)](https://courses.pikuma.com/courses/raycasting)**
 - **[Permadi - Ray-Casting Tutorial](https://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/)** 
 - **[Wolf3D raycasting engine – The Theory](http://www.sebcossu.com/2018/02/07/wolf3d-raycasting-engine-theory/)** 
 - **[A first-person engine in 265 lines - JS](https://www.playfuljs.com/a-first-person-engine-in-265-lines/)** 
@@ -25,6 +26,8 @@ It will enable you to explore ray-casting. Your goal will be to make a dynamic v
 - **[Images in minilibx](https://github.com/keuhdall/images_example)**
 - **[BMP format on StackOverflow](https://stackoverflow.com/questions/2654480/writing-bmp-image-in-pure-c-c-without-other-libraries)**
 - **[BMP format explanation](https://web.archive.org/web/20080912171714/http://www.fortunecity.com/skyscraper/windows/364/bmpffrmt.html)**
+- **[FDF cookbook](https://yadi.sk/d/Y618wPWjYkOqXg)**
+
 
 ## How to realize Wolf3D step by step 
 
